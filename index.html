@@ -41,13 +41,13 @@
 </style>
 <body style="margin : 0px; overflow: hidden;">
 <div class="buttons">
-  <button class="say-hi-button">TEST BUTTON TRX</button>
+  <button class="say-hi-button">TEST BUTTON HIRO</button>
 </div>
 <a-scene embedded arjs='trackingMethod: best; patternRatio: 0.9; debugUIEnabled: false; maxDetectionRate:30;' antialias="true">
   <a-assets>
     <a-asset-item id="dino" src="assets/models/scene.gltf"></a-asset-item>
   </a-assets>
-  <a-marker preset="custom" type="pattern" url="assets/img/patterns/pattern-logo.patt">
+  <a-marker preset="hiro">
     <a-entity id="animated-dino" gltf-model="#dino"
               position="0 0 0"
               rotation="0 0 0"
