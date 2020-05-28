@@ -22,7 +22,7 @@
     <a-plane color="white" material="transparent: true; opacity: 0.90" position="0 -0.25 0" rotation="-90 0 0" width="3"></a-plane>
 
     <!-- for more properties, see https://github.com/aframevr/aframe/blob/master/docs/components/text.md -->
-    <a-text align="center" color="red" font="fonts/Exo2Bold.fnt" rotation="-90 0 0" scale="2 2 2" value="Hello, world!"></a-text>
+    <a-text align="center" color="red" font="fonts/Exo2Bold.fnt" rotation="-90 0 0" scale="2 2 2" value="Welcome to, iRestify!"></a-text>
 
     <!-- positioning a second copy to attempt drop-shadow effect; need to adjust position to avoid z-fighting -->
     <!-- <a-text value="Hello, world!" font="fonts/Exo2Bold.fnt" color="black" rotation="-90 0 0" align="center" scale="2 2 2" position="0.01 -0.2 0"></a-text> -->
@@ -33,7 +33,7 @@
   </a-marker>
 
   <!-- 3D text -->
-  <a-marker type="pattern" url="data/patternlogo.patt">
+  <a-marker type="pattern" url="data/logo.patt">
 
     <!--
         using aframe-text-geometry component
@@ -43,7 +43,7 @@
      -->
     <a-entity material="color: green; src: #pixels; repeat: 0.5 0.5;"
               rotation="-90 0 0"
-              text-geometry="value: Hello, iRestify!; font: #exoFont;">
+              text-geometry="value: Hello 3D, iRestify!; font: #exoFont;">
     </a-entity>
 
   </a-marker>
