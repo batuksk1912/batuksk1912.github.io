@@ -3,7 +3,7 @@
 <head>
 
   <meta content="yes" name="apple-mobile-web-app-capable">
-  <meta content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+  <meta content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=10.0" name="viewport">
   <script src="js/aframe.min.js"></script>
   <script src="js/aframe-ar.js"></script>
 
@@ -54,9 +54,11 @@
     <a-asset-item id="exoFont" src="fonts/exoBlack.typeface.json"></a-asset-item>
     <img id="pixels" src="images/pixels.png" />
 
-    <video autoplay controls crossorigin id="vid" loop="true" playsinline poster="images/pixels.png" preload="auto" response-type="arraybuffer" type="video/mp4" webkit-playsinline>
-      <source src="videos/ires.mp4">
-      <img src="images/pixels.png"> Your browser does not support Or Else Please Click Reset Button.
+    <!--<video autoplay controls crossorigin id="vid" loop="true" playsinline poster="images/pixels.png" preload="auto" response-type="arraybuffer" type="video/mp4" webkit-playsinline>
+      <source src="videos/ires.mp4">-->
+    <video autoplay crossorigin="anonymous" id="vid" loop="true" preload="auto" src="videos/ires.mp4" type="video/mp4">
+
+    <img src="images/pixels.png"> Your browser does not support Or Else Please Click Reset Button.
     </video>
   </a-assets>
 
