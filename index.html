@@ -50,7 +50,7 @@
 
     <!--<video autoplay controls crossorigin id="vid" loop="true" playsinline poster="images/pixels.png" preload="auto" response-type="arraybuffer" type="video/mp4" webkit-playsinline>
       <source src="videos/ires.mp4">-->
-    <video autoplay crossorigin="anonymous" id="vid" loop="true" preload="auto" src="videos/irestify.mp4" type="video/mp4">
+    <video autoplay crossorigin="anonymous" id="vid" loop="true" preload="auto" src="videos/irestify.mp4" type="video/mp4" webkit-playsinline>
 
     <img src="images/pixels.png"> Your browser does not support Or Else Please Click Reset Button.
     </video>
@@ -100,6 +100,13 @@
 
 </a-scene>
 
+<script>
+  window.addEventListener('click', function () {
+    var v = document.querySelector("#vid");
+    v.play();
+  });
+</script>
+
 <div class="footer">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-left">
@@ -116,10 +123,5 @@
 </div>
 
 </body>
-<script>
-  window.addEventListener('click', function () {
-    var v = document.querySelector('#BS0i6');
-    v.play();
-  });
-</script>
+
 </html>
